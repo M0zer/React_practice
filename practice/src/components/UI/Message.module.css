@@ -8,13 +8,14 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.modal {
+.message {
   position: fixed;
   top: 30vh;
   left: 10%;
   width: 80%;
   z-index: 100;
   overflow: hidden;
+  color: black;
 }
 
 .header {
@@ -38,7 +39,7 @@
 }
 
 @media (min-width: 768px) {
-  .modal {
+  .message {
     left: calc(50% - 20rem);
     width: 40rem;
   }

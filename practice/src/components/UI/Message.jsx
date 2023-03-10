@@ -1,21 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Button from "./Button";
-import classes from "./ErrorModal.module.css";
+import styles from "./Message.module.css";
 import Card from "./Card";
 
 const Message = (props) => {
   return (
     <>
-      <div className={classes.backdrop} onClick={props.onConfirm} />
-      <Card className={classes.modal}>
-        <header className={classes.header}>
+      <div className={styles.backdrop} onClick={props.onConfirm} />
+      <Card className={styles.message}>
+        <header className={styles.header}>
           <h2>{props.title}</h2>
         </header>
-        <div className={classes.content}>
-          <p>{props.message}</p>
+        <div className={styles.content}>
+          <p>{props.msg}</p>
         </div>
-        <footer className={classes.actions}>
+        <footer className={styles.actions}>
           <Button onClick={props.onConfirm}>Okay</Button>
         </footer>
       </Card>
